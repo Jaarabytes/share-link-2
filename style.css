@@ -1,0 +1,82 @@
+/* Add CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,400&display=swap');
+*{
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+h3, span{
+    font-weight:bold;
+}
+
+#main{
+    border-radius: 8px;
+    background-color: white;
+    padding:20px;
+    width:50rem;
+    margin: 8rem auto;
+    opacity:0;
+    position: relative;
+    z-index: 2;
+}
+
+body {
+    background-image: url("https://clipground.com/images/purple-circle-clipart-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+#last{
+    background-color: rgb(243, 231, 231);
+    border-radius: 8px;
+    font-size:12px;
+    padding:10px 13rem 10px 10px;
+}
+#share{
+    border-radius: 5px;
+    background-color: rgb(157, 11, 241);
+    color:white;
+    padding:9px 25px;
+
+}
+#input{
+    width:35rem;
+    height:2.6rem;
+}
+#input:active{
+    border:1px solid gray;
+}
+a{
+    color:rgb(157, 11, 241)
+}
+#close {
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+  }
+  
+#close:hover {
+    transform: rotate(-180deg);
+    background-color:rebeccapurple;
+}
+#header{
+    text-align:end;
+}
+@media(max-width:815px) {
+    #main{
+        width:100%;
+    }
+    #input{
+        width:75%
+    }
+    #share{
+        width:25%;
+        padding:0px;
+    }
+    p{
+        font-size:12px;
+    }
+    #last{
+        padding: 0px;
+    }
+    #buttons{
+        display: flex;
+    }
+}
